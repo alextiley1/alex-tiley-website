@@ -7,9 +7,8 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/alex-tiley/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Alex Tiley',
-  subHeading: 'Web Developer & Mobile Developer',
+  subHeading: 'Web & Mobile Developer',
   // social
   socialLinks: [
     {
