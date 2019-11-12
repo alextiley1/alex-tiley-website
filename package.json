@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-starter-highlights",
-  "version": "0.0.1",
+  "name": "alex-tiley-website",
+  "version": "1.0.0",
   "description": "Gatsby.js V2 starter template based on Highlights by HTML5 UP",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-highlights.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Alex Tiley",
+    "email": "alextiley1@gmail.com"
   },
   "dependencies": {
     "gatsby": "^2.4.3",
@@ -40,12 +40,11 @@
   },
   "keywords": [
     "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-highlights"
+    "alex-tiley"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-highlights/issues"
+    "url": "https://github.com/alextiley1/alex-tiley-website/issues"
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-highlights#readme"
+  "homepage": "https://github.com/alextiley1/alex-tiley-website#readme"
 }

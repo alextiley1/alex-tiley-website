@@ -6,14 +6,13 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Scroll from '../components/Scroll'
 import overLayPic from '../assets/images/overlay.png'
-import config from '../../config'
 
 const sections = [
   { id: 'one', bg: require('../assets/images/mw.jpg') },
   { id: 'two', bg: require('../assets/images/vy.jpg') },
-  { id: 'three', bg: require('../assets/images/b2.jpg') },
+  { id: 'three', bg: require('../assets/images/bea.jpg') },
   { id: 'four', bg: require('../assets/images/w.jpg') },
-  { id: 'footer', bg: require('../assets/images/vy.jpg') }
+  { id: 'footer', bg: require('../assets/images/b2.jpg') }
 ]
 const IndexPage = () => (
   <Layout>
@@ -89,13 +88,8 @@ const IndexPage = () => (
           <p>These are a few of the skills I have picked up over the years</p>
           <ul className="alt">
             <li>
-              <h3>HTML</h3>
-            </li>
-            <li>
-              <h3>JavaScript</h3>
-            </li>
-            <li>
-              <h3>Css</h3>
+              <h3>HTML, JS & CSS</h3>
+              <p>HTML, Javascript and Css form the base of the hybrid mobile apps development and web development that I develop.</p>
             </li>
             <li>
               <h3>Cordova</h3>
@@ -106,54 +100,60 @@ const IndexPage = () => (
             </li>
             <li>
               <h3>NodeJS</h3>
+              <p>
+                I generally use Node when testing to spin up small local servers to connect my applications to if there is no real backend yet for
+                them to connect to, and have a good understanding of how it works.
+              </p>
             </li>
             <li>
-              <h3>Angular 2</h3>
-            </li>
-            <li>
-              <h3>Ionic</h3>
+              <h3>Angular 2 & Ionic</h3>
+              <p>I have completed a Udemy course on Angular 2 and am currently learning how to integrate Angular into mobile apps using Ionic.</p>
             </li>
             <li>
               <h3>Bash</h3>
+              <p>
+                I have a good understanding of the Bash scripting from using a Linux operating system and writing Bash scripts to automate various
+                processes.
+              </p>
             </li>
             <li>
               <h3>Git</h3>
+              <p>
+                I have used GIT repositories extensively with my mobile app projects. I can use GIT via the command line, or a GUI interface like Fork
+                or SourceTree. I have a good understanding of repositories, branches, commits, pipelines and push/pull requests. I have used GitHub,
+                ButBucket and GitLab.
+              </p>
             </li>
             <li>
               <h3>Jira</h3>
+              <p>I have used Jira extensively to track issues</p>
             </li>
             <li>
               <h3>Java</h3>
+              <p>I studied Java at Van Zyl and Prichard and am proficient.</p>
             </li>
             <li>
               <h3>ReactJS</h3>
+              <p>
+                During my time at SovTech I have used React JS as the frontend Javascript Framework for the applications I have build, these have been
+                progressive, responsive web applications (PWA), I have been mainly using Typescript with react instead of pure JS.
+              </p>
             </li>
             <li>
               <h3>React Native</h3>
+              <p>
+                I have investigated React Native and skilled up on it when joining SovTech, I have recently created another small app as a refresher
+                and am currently in the process of publishing it.
+              </p>
             </li>
             <li>
               <h3>AWS</h3>
+              <p>
+                I have used many AWS services including Cognito, DynamoDB (using GraphQL to CRUD data), Lambda, CloudFront, I generally use these
+                behind Amplify. I have also investigated services such as Rekognition and Transcribe offered by AWS.
+              </p>
             </li>
           </ul>
-        </div>
-        <Scroll type="id" element="four">
-          <a href="#four" className="goto-next ">
-            Next
-          </a>
-        </Scroll>
-      </div>
-    </section>
-
-    <section id="four" className="main special">
-      <div className="container">
-        <span className="image fit primary">
-          <img src={sections[3].bg} alt="" />
-        </span>
-        <div className="content">
-          <header className="major">
-            <h2>One more thing</h2>
-          </header>
-          <p>All of the photos on this site were taken my me :)</p>
         </div>
         <Scroll type="id" element="footer">
           <a href="#footer" className="goto-next ">
@@ -166,20 +166,9 @@ const IndexPage = () => (
     <section id="footer">
       <div className="container">
         <header className="major">
-          <h2>Get in touch</h2>
+          <h2>One last thing</h2>
         </header>
-        <ul className="icons-grid">
-          {config.socialLinks.map(social => {
-            const { icon, name, url } = social
-            return (
-              <li key={url}>
-                <a href={url} width="40px" className={`icon alt ${icon}`}>
-                  <h5 className="label">{name}</h5>
-                </a>
-              </li>
-            )
-          })}
-        </ul>
+        <p>All of the photos on this site were taken my me :)</p>
       </div>
       <Footer />
     </section>
