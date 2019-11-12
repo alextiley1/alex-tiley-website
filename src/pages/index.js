@@ -1,18 +1,20 @@
-import React from 'react';
-import Scrollspy from 'react-scrollspy';
+import React from 'react'
+import Scrollspy from 'react-scrollspy'
 
-import Layout from '../components/Layout';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Scroll from '../components/Scroll';
-import overLayPic from '../assets/images/overlay.png';
-import { Link } from 'gatsby';
+import Layout from '../components/Layout'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Scroll from '../components/Scroll'
+import overLayPic from '../assets/images/overlay.png'
+import config from '../../config'
 
 const sections = [
-  { id: 'one', bg: require('../assets/images/pic01.jpg') },
-  { id: 'two', bg: require('../assets/images/pic02.jpg') },
-  { id: 'three', bg: require('../assets/images/pic03.jpg') },
-];
+  { id: 'one', bg: require('../assets/images/mw.jpg') },
+  { id: 'two', bg: require('../assets/images/vy.jpg') },
+  { id: 'three', bg: require('../assets/images/b2.jpg') },
+  { id: 'four', bg: require('../assets/images/w.jpg') },
+  { id: 'footer', bg: require('../assets/images/vy.jpg') }
+]
 const IndexPage = () => (
   <Layout>
     <Header />
@@ -27,11 +29,11 @@ const IndexPage = () => (
             <h2>Who I am</h2>
           </header>
           <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
+            I am a hard working, transparent, honest and dedicated team player in the work environment. As team leader in my previous position at MIP,
+            I was good at motivating my team, and leading by example, with belief in a strong work ethic. I am ambitious, competitive and always
+            looking for learning opportunities. I am at my best when faced with new challenges within my field. As a developer at in my current
+            position at SovTech, I am constantly being challenged with new problems to solve with new technologies. I am always friendly, polite and
+            professional.
           </p>
         </div>
         <Scroll type="id" element="two">
@@ -51,26 +53,19 @@ const IndexPage = () => (
           <header className="major">
             <h2>Stuff I do</h2>
           </header>
-          <p>
-            Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum
-            lorem blandit vis ac commodo aliquet vulputate.
-          </p>
+          <p>These are a few of my main interests that keep me busy.</p>
           <ul className="icons-grid">
             <li>
-              <span className="icon major fa-camera-retro" />
-              <h3>Photography</h3>
+              <h3>App Development</h3>
             </li>
             <li>
-              <span className="icon major fa-pencil" />
-              <h3>Blogging</h3>
-            </li>
-            <li>
-              <span className="icon major fa-code" />
               <h3>Web Development</h3>
             </li>
             <li>
-              <span className="icon major fa-coffee" />
-              <h3>Sipping Coffee</h3>
+              <h3>Photography</h3>
+            </li>
+            <li>
+              <h3>IOT</h3>
             </li>
           </ul>
         </div>
@@ -89,15 +84,76 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
+            <h2>Skills I have</h2>
+          </header>
+          <p>These are a few of the skills I have picked up over the years</p>
+          <ul className="alt">
+            <li>
+              <h3>HTML</h3>
+            </li>
+            <li>
+              <h3>JavaScript</h3>
+            </li>
+            <li>
+              <h3>Css</h3>
+            </li>
+            <li>
+              <h3>Cordova</h3>
+              <p>
+                Cordova is the wrapper that allows the HTML, Javascript and CSS to run natively on a mobile device. I developed a good understanding
+                of Cordova through mobile app writing, and regularly use the command line tools.
+              </p>
+            </li>
+            <li>
+              <h3>NodeJS</h3>
+            </li>
+            <li>
+              <h3>Angular 2</h3>
+            </li>
+            <li>
+              <h3>Ionic</h3>
+            </li>
+            <li>
+              <h3>Bash</h3>
+            </li>
+            <li>
+              <h3>Git</h3>
+            </li>
+            <li>
+              <h3>Jira</h3>
+            </li>
+            <li>
+              <h3>Java</h3>
+            </li>
+            <li>
+              <h3>ReactJS</h3>
+            </li>
+            <li>
+              <h3>React Native</h3>
+            </li>
+            <li>
+              <h3>AWS</h3>
+            </li>
+          </ul>
+        </div>
+        <Scroll type="id" element="four">
+          <a href="#four" className="goto-next ">
+            Next
+          </a>
+        </Scroll>
+      </div>
+    </section>
+
+    <section id="four" className="main special">
+      <div className="container">
+        <span className="image fit primary">
+          <img src={sections[3].bg} alt="" />
+        </span>
+        <div className="content">
+          <header className="major">
             <h2>One more thing</h2>
           </header>
-          <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
-          </p>
+          <p>All of the photos on this site were taken my me :)</p>
         </div>
         <Scroll type="id" element="footer">
           <a href="#footer" className="goto-next ">
@@ -112,58 +168,28 @@ const IndexPage = () => (
         <header className="major">
           <h2>Get in touch</h2>
         </header>
-        <form method="post" action="#">
-          <div className="row gtr-uniform">
-            <div className="col-6 col-12-xsmall">
-              <input type="text" name="name" id="name" placeholder="Name" />
-            </div>
-            <div className="col-6 col-12-xsmall">
-              <input type="email" name="email" id="email" placeholder="Email" />
-            </div>
-            <div className="col-12">
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Message"
-                rows="4"
-              />
-            </div>
-            <div className="col-12">
-              <ul className="actions special">
-                <li>
-                  <input
-                    type="submit"
-                    value="Send Message"
-                    className="primary"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </form>
-        <Link to="/Elements"> Check out Elements page</Link>
+        <ul className="icons-grid">
+          {config.socialLinks.map(social => {
+            const { icon, name, url } = social
+            return (
+              <li key={url}>
+                <a href={url} width="40px" className={`icon alt ${icon}`}>
+                  <h5 className="label">{name}</h5>
+                </a>
+              </li>
+            )
+          })}
+        </ul>
       </div>
       <Footer />
     </section>
 
-    <Scrollspy
-      items={sections.map(s => s.id)}
-      currentClassName="active"
-      offset={50}
-      componentTag={'div'}
-    >
+    <Scrollspy items={sections.map(s => s.id)} currentClassName="active" offset={50} componentTag={'div'}>
       {sections.map(s => {
-        return (
-          <div
-            key={s.id}
-            className="main-bg"
-            id={`${s.id}-bg`}
-            style={{ backgroundImage: `url(${overLayPic}), url(${s.bg})` }}
-          />
-        );
+        return <div key={s.id} className="main-bg" id={`${s.id}-bg`} style={{ backgroundImage: `url(${overLayPic}), url(${s.bg})` }} />
       })}
     </Scrollspy>
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage
