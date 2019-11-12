@@ -133,10 +133,10 @@ const IndexPage = () => (
               <p>I studied Java at Van Zyl and Prichard and am proficient.</p>
             </li>
             <li>
-              <h3>ReactJS</h3>
+              <h3>React JS</h3>
               <p>
-                During my time at SovTech I have used React JS as the frontend Javascript Framework for the applications I have build, these have been
-                progressive, responsive web applications (PWA), I have been mainly using Typescript with react instead of pure JS.
+                During my time at SovTech I have used React as the frontend Javascript Framework for the applications I have built, these have been
+                progressive, responsive web applications (PWA), I have been mainly using Typescript with React instead of pure JS.
               </p>
             </li>
             <li>
