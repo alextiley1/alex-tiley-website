@@ -168,7 +168,7 @@ const IndexPage = () => (
         <header className="major">
           <h2>One last thing</h2>
         </header>
-        <p>All of the photos on this site were taken my me :)</p>
+        <p>All of the photos on this site were taken by me :)</p>
       </div>
       <Footer />
     </section>
