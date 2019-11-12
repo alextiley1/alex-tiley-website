@@ -30,9 +30,8 @@ const IndexPage = () => (
           <p>
             I am a hard working, transparent, honest and dedicated team player in the work environment. As team leader in my previous position at MIP,
             I was good at motivating my team, and leading by example, with belief in a strong work ethic. I am ambitious, competitive and always
-            looking for learning opportunities. I am at my best when faced with new challenges within my field. As a developer at in my current
-            position at SovTech, I am constantly being challenged with new problems to solve with new technologies. I am always friendly, polite and
-            professional.
+            looking for learning opportunities. I am at my best when faced with new challenges within my field. As a developer at SovTech, I am
+            constantly being challenged with new problems to solve with new technologies. I am always friendly, polite and professional.
           </p>
         </div>
         <Scroll type="id" element="two">
