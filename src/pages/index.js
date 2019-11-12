@@ -126,7 +126,7 @@ const IndexPage = () => (
             </li>
             <li>
               <h3>Jira</h3>
-              <p>I have used Jira extensively to track issues</p>
+              <p>I have used Jira extensively to track issues.</p>
             </li>
             <li>
               <h3>Java</h3>
