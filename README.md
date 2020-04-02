@@ -18,6 +18,7 @@ And run from your CLI:
 gatsby new <site-name> https://github.com/anubhavsrivastava/gatsby-starter-highlights
 ```
 
+
 Then you can run it by:
 
 ```sh
