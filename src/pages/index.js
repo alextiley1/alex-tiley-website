@@ -34,7 +34,8 @@ const IndexPage = () => (
             work ethic. I am ambitious, competitive and always looking for learning opportunities. I am at my best when faced with new challenges
             within my field.
             <br />
-            <br /> As a developer at SovTech, I am constantly being challenged with new problems to solve with new technologies. <br />
+            <br /> As a developer at SovTech, I was constantly being challenged with new problems to solve with new technologies. <br />
+            <br /> I recently founded my own company, Appsolutely. It has been a dream of mine for a very long time. I build standalone projects in my proficient tech stack for clients, and contract for companies too. <br />
             <br />I am always friendly, polite and professional.
           </p>
         </div>
